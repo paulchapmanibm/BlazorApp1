@@ -3,8 +3,8 @@
 FROM quay.io/paulchapmanibm/ppc64le/dotnet-70 AS base
 #FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+# EXPOSE 443
 
 FROM dotnet-70 AS build 
 WORKDIR /opt/app-root/src
